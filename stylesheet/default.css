@@ -1,0 +1,62 @@
+    @font-face { 
+          font-family: 'Open Sans'; 
+          src: url('font/OpenSans.ttf'); 
+        }
+
+        .civblogscontent{
+            font-family: "Open Sans",verdana;
+            font-size: 80%;
+            color: #333;
+            width: 250px;
+            padding: 5px 8px;
+            margin-top: -1px;
+            border: 1px solid #ddd;
+
+        }
+
+        #civblogs li{
+            list-style-type: none;
+            padding: 5px 9px;
+            margin: 0px;
+            display: inline-block;
+
+            background: #bfd255; /* Old browsers */
+            background: -moz-linear-gradient(top,  #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(50%,#8eb92a), color-stop(51%,#72aa00), color-stop(100%,#9ecb2d)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+
+
+            border: 1px solid #eee;
+            border-radius: 5px 5px 0px 0px;
+            color: #fff;
+            font-family: "Open Sans",verdana;
+            font-size: .8em;
+            font-weight: bold;
+        }
+
+        #civblogs li:hover{
+            background: #7cbf00; /* Old browsers */
+            background: -moz-linear-gradient(top,  #7cbf00 0%, #6cb249 94%, #a3d130 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7cbf00), color-stop(94%,#6cb249), color-stop(100%,#a3d130)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #7cbf00 0%,#6cb249 94%,#a3d130 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #7cbf00 0%,#6cb249 94%,#a3d130 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #7cbf00 0%,#6cb249 94%,#a3d130 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #7cbf00 0%,#6cb249 94%,#a3d130 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cbf00', endColorstr='#a3d130',GradientType=0 ); /* IE6-9 */
+            }
+
+        #civblogs{
+            width: auto;
+            margin: 0px;
+            padding: 0 10;
+        }
+
+        .civblogs-art{
+            min-height: 80px;
+            border-bottom: 1px dashed #aaa;
+        }
+
