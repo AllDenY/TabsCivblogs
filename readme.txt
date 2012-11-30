@@ -2,6 +2,9 @@
 Contributors: Alldeny
 Donate link: http://www.alldeny.net/
 Tags: Tabscivblogs,widget,civblogs,civblogs
+Requires at least: 1.0
+Tested up to: 1.0
+Stable tag: 1.0
 Version: 1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
