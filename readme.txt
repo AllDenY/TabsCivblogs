@@ -1,9 +1,12 @@
 === Plugin Name ===
-
 Contributors: Alldeny
 Donate link: http://www.alldeny.net/
 Tags: Tabscivblogs,widget,civblogs,civblogs
 Version: 1.0
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Widget permettant de voir les actualités de civblogs.akendewa.net
 
 == Description ==
 
