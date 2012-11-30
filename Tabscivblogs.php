@@ -8,7 +8,7 @@
  * Author URI: http://alldeny.net
  */
 
-
+ 
 //Execute la fonction socialcard_init pour activer le widget
 add_action('widgets_init','tabscivblogs_init');
 
@@ -32,7 +32,7 @@ function objectToArray($d) {
 
 //Charge les données de API REST via URL
 function ApiRest($url){
-	$table=objectToArray(json_decode(file_get_contents($url,NULL,NULL,0,250000)));
+	$table=objectToArray(json_decode(file_get_contents($url,NULL,NULL,0,200000)));
 	return($table);
 }
 
@@ -88,7 +88,7 @@ class tabscivblogs_widget extends WP_widget{
 							for($i=0;$i<=4;$i++){
 						?>
 							<div class="civblogs-art" style="margin:5px;">
-								<img src="<?php echo $recent['posts'][$i]['Post']['image_url']; ?>" style="box-shadow: 0px 1px 10px #aaa;border: 5px solid #fff; margin:5px;" width="50" height="50" align="left">
+								<img src="<?php if($recent['posts'][$i]['Post']['image_url']){echo $recent['posts'][$i]['Post']['image_url'];}else{ echo $this->pluginDir.'/stylesheet/logo.jpg';} ?>" style="box-shadow: 0px 1px 10px #aaa;border: 5px solid #fff; margin:5px;" width="50" height="50" align="left">
 								<p>
 									<b><a href="<?php echo $recent['posts'][$i]['Post']['url']; ?>"><?php echo $recent['posts'][$i]['Post']['title']; ?></a></b><br>
 										
@@ -104,7 +104,7 @@ class tabscivblogs_widget extends WP_widget{
 							for($i=0;$i<=4;$i++){
 						?>
 							<div class="civblogs-art" style="margin:5px;">
-								<img src="<?php echo $top['posts'][$i]['Post']['image_url']; ?>" style="box-shadow: 0px 1px 10px #aaa;border: 5px solid #fff; margin:5px;" width="50" height="50" align="left">
+								<img src="<?php if($recent['posts'][$i]['Post']['image_url']){echo $recent['posts'][$i]['Post']['image_url'];}else{ echo $this->pluginDir.'/stylesheet/logo.jpg';} ?>" style="box-shadow: 0px 1px 10px #aaa;border: 5px solid #fff; margin:5px;" width="50" height="50" align="left">
 								<p>
 									<b>
 										<a href="<?php echo $top['posts'][$i]['Post']['url']; ?>"><?php echo $top['posts'][$i]['Post']['title']; ?></a>
@@ -122,7 +122,7 @@ class tabscivblogs_widget extends WP_widget{
 						<?php
 						for($i=0;$i<=(count($tags['trends'])/3);$i++){
 							$taille = $tags['trends'][$i]['Tag']['weight']+3;
-							echo " <i style='font-size:".$taille."px; text-decoration:underline;'>".$tags['trends'][$i]['Tag']['name']."</i>";
+							echo " <a target='_blank' href='http://civblogs.akendewa.org/posts/index/t:".$tags['trends'][$i]['Tag']['keyname']."'> <i style='font-size:".$taille."px; text-decoration:underline;'>".$tags['trends'][$i]['Tag']['name']."</i></a>";
 						} 
 						?>
 					</div>
