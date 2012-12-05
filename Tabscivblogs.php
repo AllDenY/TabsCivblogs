@@ -68,9 +68,8 @@ class tabscivblogs_widget extends WP_widget{
 			
 			//Liste des tags
 			$tags = ApiRest("http://civblogs.akendewa.org/tags.json"); 
-			
+			wp_enqueue_style('tabscivblogs-style',$this->pluginDir.'/stylesheet/default.css');
 			?>
-			<link rel="stylesheet" type="text/css" href="<?php echo $this->pluginDir.'/stylesheet/default.css'; ?>">
 			<script type="text/javascript" src="<?php echo $this->pluginDir.'/scripts/IdTabs.js'; ?>"></script>
 			
 			<!-- Titre pour les onglets -->
