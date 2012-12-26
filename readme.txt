@@ -23,3 +23,13 @@ Tabs CivBlogs est un widget Wordpress permettant d'afficher les articles récent
 
 
 Visitez notre site http:www.alldeny.net
+
+== Frequently Asked Questions == 
+.
+== Changelog == 
+.
+== Upgrade Notice ==
+.
+== Screenshots ==
+https://github.com/AllDenY/TabsCivblogs/blob/master/screenshot/tabs.jpg
+https://github.com/AllDenY/TabsCivblogs/blob/master/screenshot/tabs2.jpg
